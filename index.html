@@ -1,14 +1,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 
-<!--- //////////////////////////////////
-.wrapper
-  - var i = 149
-  while i > -1
-    div(class="confetti-"+i)
-    - i--
-////////////////////////////////// -->
-
 <div id="card">
     <div id="card-inside">
       <div class="wrap">
@@ -43,7 +35,7 @@ for (var i = 0; i < 250; i++) {
 }
 
 function create(i) {
-  var width = Math.random() * 8;
+  var width = Math.random() * 15;
   var height = width * 0.4;
   var colourIdx = Math.ceil(Math.random() * 3);
   var colour = "red";
@@ -69,12 +61,16 @@ function create(i) {
   drop(i);
 }
 
+var count = 0;
 function drop(x) {
+  count++;
   $('.confetti-'+x).animate({
     top: "100%",
     left: "+="+Math.random()*15+"%"
   }, Math.random()*3000 + 3000, function() {
-    reset(x);
+    if(count<650){
+      reset(x);
+    }
   });
 }
 
