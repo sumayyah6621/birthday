@@ -35,7 +35,7 @@ body {
 
 
 #card-inside .wrap {
-    background: #dff2f2;
+    background: #B0E9F5;
     -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
     -moz-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
     box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
@@ -158,7 +158,7 @@ p.signed {
 
 #card.open-fully #card-front,
 #card.close-half #card-front {
-  background: #dffeff;
+  background: #B0E9F5;
 }
 
 #card.open-fully #card-front {
