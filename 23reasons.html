@@ -1,8 +1,15 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="style2.css">
+<script> 
+  var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});  
+</script>
+
 
 <div id="row1" class="row">
-  <div class="col-sm-3">.col-sm-4</div>
+  <div class="card col-sm-3">.col-sm-4</div>
       <div class="card-face card-front">
         <p> front </p>
       </div>
