@@ -91,10 +91,10 @@
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <script>
-var randomNumber = 0;
+var count = 0;
 var currentQuote = "";
 
-var quotesArray = [		   "Reason One",
+var quotesArray = [		   'Reason One',
 				   "Reason Two",
 				   "Reason Three",
 				   "Reason Four",
@@ -124,13 +124,12 @@ function getArrayLength(){
 }
 
 /* Generate a random number that will span a range from 0 to the last index of each array */
-function generateRandomNumber(){
-	randomNumber = Math.floor((Math.random() * getArrayLength()));
-}
 
-function showQuotesAndWhoSaid(){	
-	generateRandomNumber();
-	document.getElementById("contentParagraph").innerHTML = "\"" + quotesArray[randomNumber] + "\"";
+
+function showQuotesAndWhoSaid(){
+	if(count>23) count = 0 ;
+	document.getElementById("contentParagraph").innerHTML = "\"" + quotesArray[count] + "\"";
+	count++;
 }
 
 function getCurrentQuote(){
