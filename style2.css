@@ -34,3 +34,9 @@ p{
     color:white;
     padding-top:50px;
 }
+
+img {
+  width: 30%;
+  float: left;
+  margin:1.66%;  /*10%/6*/
+   }
