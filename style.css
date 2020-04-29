@@ -17,12 +17,12 @@ body {
 }
 
 #card, #card-front, #card-inside {
-  height: 500px;
+  height: 700px;
 }
 
 .wrap {
     padding: 1.5em 2.5em;
-    height: 89%;
+    height: 92.5%;
 }
 #card-front, #card-inside {
   width: 50%;
