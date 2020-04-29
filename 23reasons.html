@@ -94,29 +94,29 @@
 var count = 0;
 var currentQuote = "";
 
-var quotesArray = [		   'Reason One',
-				   "Reason Two",
-				   "Reason Three",
-				   "Reason Four",
-				   "Reason Five",
-				   "Reason Six",
-				   "Reason Seven",
-				   "Reason 8",
-				   "Reason 9",
-				   "Reason 10",
-				   "Reason 11",
-           			   "Reason 12",
-		  		   "Reason 13",
-				   "Reason 14",
-				   "Reason 15",
-				   "Reason 16",
+var quotesArray = [		   "You are my safe place. When it feels like the world is closing in on me, being with you or just talking to you, makes me feel so safe.",
+				   "You have an extremely kind heart, even towards those who don't deserve it.",
+				   "You always think 10 steps in advance and you are very intelligent in that way.",
+				   "You always make time for me in your incredibly busy schedule",
+				   "You are so confident and couragous and I love that about you; I admire greatly that you know your worth and stand up for yourself.",
+				   "I love how sincere and genuine you are. In a today's world that is incredibly hard to find, and I'm so lucky to have you.",
+				   "You always always make me laugh. I know I can count on you to always cheer me up, even on the darkest days.",
+				   "I love that we can talk for 6 hours straight until the sun rises, talking about our ambitions, picking out our dream home, jinn stories, and down to literally anything.",
+				   "Whilst we can talk for hours, I love that we can also sit in silence and just enjoy each other's company.",
+				   "You are just so perfect, inside and out. You don't have to see it, because I do, You're perfect to me.",
+				   "You inspire me to be a better person everyday.",
+           			   "I'll admit it...You have very good taste in literally everthing: food, clothes,...me :)",
+		  		   "You are extremely understanding and honest."
+				   "As cheeky as it may sound, I get lost in those honey dipped eyes, and when you laugh my heart melts a little every time.",
+				   "You always want the best for everyone, and try to help in any way possible.",
+				   "",
 				   "Reason 17",
 				   "Reason 18",
 				   "Reason 19",
 				   "Reason 20",
-				   "Reason 21",
-				   "Reason 22",
-				   "Reason 23"
+				   "I love you because you make me feel like I am enough. I do not have to try too hard to impress or please you because who I am is enough for you.",
+				   "You're amazing because You are my person, my everything. And I am so lucky to be with you.",
+				   "I love you simply because you are mine, and you are mine because I love you."
 		  ];
 
 function getArrayLength(){
@@ -127,8 +127,8 @@ function getArrayLength(){
 
 
 function showQuotesAndWhoSaid(){
-	if(count>23) count = 0 ;
-	document.getElementById("contentParagraph").innerHTML = "\"" + quotesArray[count] + "\"";
+	if(count>=23) count = 0 ;
+	document.getElementById("contentParagraph").innerHTML = "quotesArray[count] ";
 	count++;
 }
 
