@@ -1,7 +1,7 @@
 .row{
-  border-color: red;
+  border:5px solid red;
 }
 
 .col-sm-4{
-  border-color: blue;
+  border-color:5px solid blue;
 }
