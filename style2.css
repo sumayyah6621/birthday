@@ -1,7 +1,8 @@
 .row{
-  border:5px solid red;
+  margin-right:200px;
+  margin-left:200px;
 }
 
 .col-sm-4{
-  border-color:5px solid blue;
+  border:0px solid black;
 }
